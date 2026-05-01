@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bukmuk Book Recommendations — Curated reading lists for every age</title>
+  <meta name="description" content="Curated, age-wise and genre-wise book recommendations for kids by Bukmuk — India's most trusted children's library since 2015." />
+  <link rel="icon" type="image/png" href="https://www.bukmuk.com/assets/bukmuk-favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="https://www.bukmuk.com" target="_blank" rel="noopener">
+      <img src="https://www.bukmuk.com/assets/darklogo.png" alt="Bukmuk" class="brand-logo"
+           onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-wordmark',textContent:'BUKMUK'}))" />
+    </a>
+    <nav class="nav-links">
+      <a href="https://www.bukmuk.com" target="_blank" rel="noopener">Visit bukmuk.com →</a>
+      <a class="ig-link" href="https://instagram.com/bukmuklibrary" target="_blank" rel="noopener" aria-label="Bukmuk on Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="hero-eyebrow">📚 Books for Bachpan</p>
+    <h1>Find the perfect books<br/>for your child.</h1>
+    <p class="hero-sub">Curated reading lists, hand-picked by Bukmuk. Browse by age and genre, download the list as a PDF, or build your own.</p>
+    <a class="hero-scroll" href="#lists" aria-label="Browse lists">Start browsing ↓</a>
+  </section>
+
+  <section class="filters" id="filters" aria-label="Filter book lists">
+    <div class="filter-row">
+      <span class="filter-label">Age</span>
+      <div class="chip-group" id="ageChips" role="group" aria-label="Filter by age"></div>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">Genre</span>
+      <div class="chip-group" id="genreChips" role="group" aria-label="Filter by genre"></div>
+    </div>
+    <button class="reset-btn" id="resetBtn" type="button">Reset filters</button>
+  </section>
+
+  <main id="lists" class="lists-grid" aria-live="polite"></main>
+
+  <p class="empty-state" id="emptyState" hidden>No lists match those filters yet. Try resetting.</p>
+
+  <section class="cta-band">
+    <div class="cta-inner">
+      <h2>Read all without buying any.</h2>
+      <p>40,000+ books · Free home delivery in Delhi NCR · India's most trusted online children's library since 2015.</p>
+      <div class="cta-btns">
+        <a class="btn btn-primary btn-lg" href="https://www.bukmuk.com" target="_blank" rel="noopener">Explore the Bukmuk library →</a>
+        <a class="btn btn-whatsapp btn-lg" href="https://chat.whatsapp.com/JYBs3RZvRA2Ci1cueIZ1Uf" target="_blank" rel="noopener" aria-label="Join the Bukmuk WhatsApp group">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.04 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.889-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.886 9.884zm8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.49-8.413z"/></svg>
+          Join WhatsApp Group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="https://www.bukmuk.com/assets/darklogo.png" alt="Bukmuk" class="footer-logo"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-wordmark footer-wordmark',textContent:'BUKMUK'}))" />
+        <p class="footer-tag">Build your child's personal library at home.</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+918130286286">+91 81302 86286</a>
+        <a href="https://chat.whatsapp.com/JYBs3RZvRA2Ci1cueIZ1Uf" target="_blank" rel="noopener">WhatsApp group</a>
+        <a href="https://www.bukmuk.com" target="_blank" rel="noopener">www.bukmuk.com</a>
+        <a href="https://instagram.com/bukmuklibrary" target="_blank" rel="noopener">@bukmuklibrary</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <p class="copyright">© Bukmuk · Trusted by parents and loved by readers since 2015</p>
+  </footer>
+
+  <button id="builderFab" class="builder-fab" type="button" hidden>
+    <span class="fab-emoji">✨</span>
+    <span>My list</span>
+    <span class="fab-count" id="fabCount">0</span>
+  </button>
+
+  <aside id="builderDrawer" class="builder-drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Your reading list</h2>
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="drawer-body">
+      <label class="drawer-label" for="childName">For whom? (optional)</label>
+      <input id="childName" type="text" placeholder="e.g. Aanya's reading list" maxlength="60" />
+      <p class="drawer-fine">Used only as the PDF title — not stored anywhere.</p>
+
+      <div class="consent-card" id="consentCard">
+        <div class="consent-head">
+          <span class="consent-emoji">✨</span>
+          <strong>Get monthly reading lists on WhatsApp</strong>
+        </div>
+        <p class="consent-sub">Bukmuk curates new books every month. Never spam.</p>
+        <input id="leadPhone" type="tel" inputmode="tel" placeholder="WhatsApp number (e.g. +91 98xxxxxxxx)" maxlength="20" autocomplete="tel" />
+        <label class="consent-check">
+          <input type="checkbox" id="leadConsent" />
+          <span>Yes, send me Bukmuk's monthly reading lists. I'm a parent/guardian, 18+.</span>
+        </label>
+        <p class="consent-fine">
+          We use this only to send curated reading lists and library updates. See our <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. Unsubscribe anytime.
+        </p>
+        <p class="consent-status" id="consentStatus" hidden></p>
+      </div>
+
+      <div class="drawer-list" id="drawerList"></div>
+      <p class="drawer-empty" id="drawerEmpty">Tick books inside any list to start building.</p>
+    </div>
+    <div class="drawer-foot">
+      <button class="btn btn-ghost" id="clearListBtn" type="button">Clear all</button>
+      <button class="btn btn-primary" id="downloadListBtn" type="button" disabled>Download PDF</button>
+    </div>
+  </aside>
+
+  <div id="drawerScrim" class="drawer-scrim" hidden></div>
+
+  <div id="pdfTemplate" class="pdf-template" aria-hidden="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
